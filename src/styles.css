@@ -1,0 +1,248 @@
+#menu {
+  display: none;
+  color: #398cc9;
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+#lisa-pic {
+  width: 4rem;
+}
+
+#nav {
+  border-bottom: 1px solid #398cc9;
+}
+
+.title-theme {
+  font-family: "Dancing Script", serif;
+}
+
+#logo-text {
+  line-height: 5rem;
+  color: #398cc9;
+  font-size: 1rem;
+
+  @media (min-width: 321px) {
+    font-size: 1.4rem;
+  }
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+#banner {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.caption {
+  position: absolute;
+  right: 5%;
+  bottom: 20px;
+  left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  top: 20%;
+  height: 7.5rem;
+
+  @media (min-width: 425px) {
+    top: 35%;
+  }
+
+  @media (min-width: 768px) {
+    top: 30%;
+  }
+
+  @media (min-width: 1024px) {
+    top: 50%;
+  }
+}
+
+#caption-title {
+  font-size: 2.5rem;
+
+  @media (min-width: 425px) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 595px) {
+    font-size: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 6.5rem;
+  }
+}
+
+#subtext {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+
+  @media (min-width: 425px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+#welcome-container {
+  background-color: #398cc9;
+}
+
+#welcome {
+  background-color: #398cc9;
+
+  @media (min-width: 1024px) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.primary-text {
+  color: #398cc9;
+}
+
+#contact {
+  color: #398cc9;
+  @media (min-width: 1024px) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+#verified-pic {
+  background-image: url(../dist/assets/verified.svg);
+  width: 284px;
+  height: 89px;
+  display: block;
+}
+
+.background-blue {
+  background-color: #398cc9;
+}
+
+#ocean {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+#ocean-lg {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.sub-header {
+  font-size: 2rem;
+  text-align: center;
+  /* margin: 1rem 0; */
+
+  @media (min-width: 1024px) {
+    font-size: 5rem;
+    /* margin: 3rem 0px; */
+  }
+}
+
+.header-small {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 1024px) {
+    font-size: 2.5rem;
+  }
+}
+
+#services {
+  @media (min-width: 1024px) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+#sunset {
+  padding: 1rem;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    max-width: 50%;
+  }
+}
+
+#flex-div {
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+#fees {
+  @media (min-width: 1024px) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+#fees-flex {
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.lg-text {
+  @media (min-width: 1024px) {
+    font-size: 1.4rem;
+  }
+}
+
+#teams-container {
+  background-color: #398cc9;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+
+.img-container {
+  text-align: center;
+  /* width: 11rem; */
+}
+
+.team-member {
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13rem;
+}
+
+.member-header {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: white;
+
+  @media (min-width: 1024px) {
+    font-size: 5rem;
+  }
+}
+
+.member-text {
+  color: #fff;
+  margin-bottom: 1rem;
+}
