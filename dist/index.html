@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+    />
+  </head>
+  <body>
+    <nav
+      id="nav"
+      class="flex items-center justify-between flex-wrap bg-white p-6 fixed-top"
+    >
+      <div class="flex items-center flex-shrink-0 mr-6">
+        <a href="./index.html" class="flex"
+          ><img src="./assets/lisa-logo.jpeg" id="lisa-pic" />
+          <span id="logo-text" class="title-theme"
+            >Mercy Cares Counseling</span
+          ></a
+        >
+      </div>
+      <div class="block lg:hidden" id="btn-container">
+        <button
+          id="responsive-button"
+          class="flex items-center px-3 py-2 border rounded hover:text-black hover:border-black responsive-block"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+        id="menu"
+      >
+        <div class="text-sm lg:flex-grow"></div>
+        <div id="nav-menu">
+          <a
+            href="./index.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-grey mr-4 link"
+          >
+            Home
+          </a>
+          <a
+            href="index.html#services"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-4 link"
+          >
+            Services
+          </a>
+          <a
+            href="index.html#fees"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
+          >
+            Finances
+          </a>
+          <a
+            href="./sub-pages/team.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
+          >
+            Team
+          </a>
+          <a
+            href="./index.html#greetings"
+            target="_blank"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
+          >
+            About
+          </a>
+          <a
+            href="index.html#contact"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-white link"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div id="banner">
+      <img src="./assets/ocean.jpg" alt="" id="ocean" />
+      <img src="./assets/ocean-lg.png" alt="" id="ocean-lg" />
+      <div class="caption">
+        <h1 class="text-3xl font-bold mb-1 title-theme" id="caption-title">
+          Mercy Cares Counseling
+        </h1>
+        <p class="title-theme mb-3" id="subtext">Spirit, Soul, Body</p>
+        <button
+          class="bg-black hover:bg-white hover:text-black py-2 px-4 rounded text font-semibold text-white"
+          data-micromodal-trigger="modal-1"
+        >
+          Login
+        </button>
+        <a href="#contact"
+          ><button
+            class="bg-black hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-black hover:border-transparent rounded text"
+          >
+            Contact
+          </button></a
+        >
+      </div>
+    </div>
+    <div id="welcome-container">
+      <div id="welcome" class="p-3 text-white lg-text">
+        <h2 class="title-theme sub-header my-10">Greetings!</h2>
+        <p class="mb-3 lg-text">
+          Mercy Cares Counseling is a counseling service which focuses on the
+          clients SPIRIT, SOUL, and BODY.
+        </p>
+        <p class="mb-3">Clients can expect:</p>
+        <ul class="list-disc ml-3">
+          <li class="mb-3">
+            a warm and compassionate counselor whose greatest desire is to help
+            them overcome their challenges
+          </li>
+          <li class="mb-3">
+            A clinician that builds authentic relationships by creating a safe
+            environment for the individual
+          </li>
+          <li class="mb-3">
+            Personable and authentic staff that will never have you questioning
+            whether or not you are the priority
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="flex-div">
+      <div id="sunset">
+        <img src="./assets/sunset.jpg" alt="" />
+      </div>
+      <div id="services" class="p-3">
+        <h2 class="sub-header title-theme">Services & Fees</h2>
+        <h3 class="header-small title-theme">Services</h3>
+        <div class="lg-text">
+          <p class="my-3">
+            At Mercy Counseling our top specialties are Mood Disorders, Trauma
+            and PTSD, and Addiction.
+          </p>
+          <p class="mb-2">
+            We also have a wide variety of expertise that includes:
+          </p>
+          <ul class="list-disc ml-3 mb-2">
+            <li>Anger Management</li>
+            <li>Anxiety</li>
+            <li>Bipolar Disorder</li>
+            <li>Christian Counseling</li>
+            <li>Codependency</li>
+            <li>Coping Skills</li>
+            <li>Drug Abuse</li>
+            <li>and more...</li>
+          </ul>
+          <p>
+            If there are any questions about any of the services we provide
+            please contact us.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="fees" class="p-3 lg-text">
+      <h3 class="header-small title-theme">Fees</h3>
+      <ul class="list-disc ml-3 mb-10">
+        <li>Individual Sessions - $150</li>
+        <li>Couple Sessions - $150</li>
+      </ul>
+      <div id="fees-flex">
+        <div>
+          <p id="payment-text mt-3">
+            We accept the following forms of payment:
+          </p>
+          <ul class="list-disc ml-3 mb-5 mt-2">
+            <li>ACH Bank Transfer</li>
+            <li>American Express</li>
+            <li>Cash</li>
+            <li>Check</li>
+            <li>Health Savings Account</li>
+            <li>MasterCard</li>
+            <li>Paypal</li>
+            <li>Venmo</li>
+            <li>Visa</li>
+          </ul>
+        </div>
+        <div>
+          <p id="payment-text mt-3">We take the following Insurance:</p>
+          <ul class="list-disc ml-3 mb-2 mt-2">
+            <li>Blue Cross Blue Shield</li>
+            <li>Care First</li>
+            <li>Cigna and Evernorth</li>
+            <li>Humana</li>
+            <li>Johns Hopkins</li>
+            <li>Medicaid</li>
+            <li>Optum</li>
+            <li>Self-pay</li>
+            <li>Tricare</li>
+            <li>United Healthcare</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="contact" class="p-3">
+      <h2 class="text-3xl text-center mt-3 mb-3 title-theme">Contact</h2>
+      <div class="mb-3">
+        <p class="my-4">
+          Individual Therapy | Couples Therapy | Family Therapy
+        </p>
+        <button
+          class="hover:bg-white hover:text-black py-2 px-4 rounded text font-semibold text-white background-blue my-4"
+        >
+          Click here to schedule an appointment
+        </button>
+        <p class="mt-4">Location:</p>
+        <a
+          href="https://www.google.com/maps/place/2138+Priest+Bridge+Court+%231,+Crofton,+MD+21114"
+          class="underline mb-4"
+          >Mercy Cares Counseling Services, LLC 2138 Priest Bridge Ct. Suite 1
+          Crofton, MD 21114</a
+        >
+      </div>
+      <div>
+        <p class="mt-4">Phone:</p>
+        <a href="tel:+1-667-239-8348" class="underline">(667) 239-8348</a>
+      </div>
+    </div>
+    <div id="verified" class="mt-4">
+      <a
+        href="https://www.psychologytoday.com/us/therapists/mercy-cares-counseling-service-llc-crofton-md/375999"
+        id="verified-pic"
+      ></a>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
