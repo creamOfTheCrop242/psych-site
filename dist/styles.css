@@ -126,7 +126,7 @@
 }
 
 #verified-pic {
-  background-image: url(../dist/assets/verified.svg);
+  background-image: url(./assets/verified.svg);
   width: 284px;
   height: 89px;
   display: block;
