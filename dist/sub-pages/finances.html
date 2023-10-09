@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+    />
+    <title>Finances</title>
+  </head>
+  <body>
+    <nav
+      id="nav"
+      class="flex items-center justify-between flex-wrap bg-white p-6 fixed-top"
+    >
+      <div class="flex items-center flex-shrink-0 mr-6">
+        <a href="../index.html" class="flex"
+          ><img src="../assets/lisa-logo.jpeg" id="lisa-pic" />
+          <span id="logo-text" class="title-theme"
+            >Mercy Cares Counseling</span
+          ></a
+        >
+      </div>
+      <div class="block lg:hidden" id="btn-container">
+        <button
+          id="responsive-button"
+          class="flex items-center px-3 py-2 border rounded hover:text-black hover:border-black responsive-block"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+        id="menu"
+      >
+        <div class="text-sm lg:flex-grow"></div>
+        <div id="nav-menu">
+          <a
+            href="../index.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-grey mr-4 link"
+          >
+            Home
+          </a>
+          <a
+            href="../index.html#services"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-4 link"
+          >
+            Services
+          </a>
+          <a
+            href="../sub-pages/finances.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4"
+          >
+            Finances
+          </a>
+          <a
+            href="../sub-pages/team.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4"
+          >
+            Team
+          </a>
+          <a
+            href="../index.html#welcome"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4"
+          >
+            About
+          </a>
+          <a
+            href="../index.html#contact"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black link"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div id="fees" class="p-3 lg-text">
+        <h3 class="header-small title-theme">Fees</h3>
+        <ul class="list-disc ml-3 mb-10">
+          <li>Individual Sessions - $200</li>
+          <li>Couple Sessions - $200</li>
+        </ul>
+        <div id="fees-flex">
+          <div>
+            <p id="payment-text mt-3">
+              We accept the following forms of payment:
+            </p>
+            <ul class="list-disc ml-3 mb-5 mt-2">
+              <li>ACH Bank Transfer</li>
+              <li>American Express</li>
+              <li>Cash</li>
+              <li>Check</li>
+              <li>Health Savings Account</li>
+              <li>Visa</li>
+              <li>Discover</li>
+            </ul>
+          </div>
+          <div>
+            <p id="payment-text mt-3">We take the following Insurance:</p>
+            <ul class="list-disc ml-3 mb-2 mt-2">
+              <li>Blue Cross Blue Shield</li>
+              <li>Care First</li>
+              <li>Cigna and Evernorth</li>
+              <li>Humana</li>
+              <li>Johns Hopkins</li>
+              <li>Medicaid</li>
+              <li>Optum</li>
+              <li>Self-pay</li>
+              <li>Tricare</li>
+              <li>United Healthcare</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="../app.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
+  "></script>
+  <script>
+    MicroModal.init();
+  </script>
+</html>

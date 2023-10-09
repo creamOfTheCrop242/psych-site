@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../microModal.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+    />
+    <title>Finances</title>
+  </head>
+  <body>
+    <nav
+      id="nav"
+      class="flex items-center justify-between flex-wrap bg-white p-6 fixed-top"
+    >
+      <div class="flex items-center flex-shrink-0 mr-6">
+        <a href="../index.html" class="flex"
+          ><img src="../assets/lisa-logo.jpeg" id="lisa-pic" />
+          <span id="logo-text" class="title-theme"
+            >Mercy Cares Counseling</span
+          ></a
+        >
+      </div>
+      <div class="block lg:hidden" id="btn-container">
+        <button
+          id="responsive-button"
+          class="flex items-center px-3 py-2 border rounded hover:text-black hover:border-black responsive-block"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+        id="menu"
+      >
+        <div class="text-sm lg:flex-grow"></div>
+        <div id="nav-menu">
+          <a
+            href="../index.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-grey mr-4 link"
+          >
+            Home
+          </a>
+          <a
+            href="../index.html#services"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-4 link"
+          >
+            Services
+          </a>
+          <a
+            href="../sub-pages/finances.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4"
+          >
+            Finances
+          </a>
+          <a
+            href="../sub-pages/team.html"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4"
+          >
+            Team
+          </a>
+          <a
+            href="../index.html#welcome"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4"
+          >
+            About
+          </a>
+          <a
+            href="../index.html#contact"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-black link"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section id="treatments">
+      <h3 class="header-small title-theme">Treatment & Approach</h3>
+      <p>Here are the list of treatments and appoaches we use:</p>
+      <ul
+        class="ml-3 mb-2"
+        id="treatment-list"
+        data-micromodal-trigger="modal-1"
+      >
+        <li class="underline" id="christianCounseling">Christian Counseling</li>
+        <li class="underline" id="cbt">Cognitive Behavioral (CBT)</li>
+        <li class="underline" id="culturallySensitive">Culturally Sensitive</li>
+        <li class="underline" id="dialectical">Dialectical Behavior (DBT)</li>
+        <li class="underline" id="eclectic">Eclectic</li>
+        <li class="underline" id="edmr">EDMR</li>
+        <li class="underline" id="existential">Existential</li>
+        <li class="underline" id="erp">Exposure Response Prevention (ERP)</li>
+        <li class="underline" id="integrative">Integrative</li>
+        <li class="underline" id="mbct">Mindfulness-Based (MBCT)</li>
+        <li class="underline" id="motivational">Motivational Interviewing</li>
+        <li class="underline" id="personCentered">Person-Centered</li>
+        <li class="underline" id="psychoanalytic">Psychoanalytic</li>
+        <li class="underline" id="traumaFocused">Trauma Focused</li>
+      </ul>
+    </section>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title"></h2>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </header>
+          <main class="modal__content" id="modal-1-content"></main>
+          <footer class="modal__footer">
+            <button
+              class="modal__btn"
+              data-micromodal-close
+              aria-label="Close this dialog window"
+            >
+              Close
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="../app.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
+  "></script>
+  <script>
+    MicroModal.init();
+  </script>
+</html>

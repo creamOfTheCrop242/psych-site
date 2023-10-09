@@ -221,6 +221,7 @@
 }
 
 #fees {
+  margin-top: 8rem;
   @media (min-width: 1024px) {
     max-width: 1000px;
     margin: 0 auto;
@@ -244,6 +245,10 @@
   background-color: #398cc9;
   margin-top: 8rem;
   padding: 1rem;
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
 }
 
 .img-container {
@@ -252,6 +257,7 @@
 }
 
 .team-member {
+  padding: 1rem;
 }
 
 .img {
@@ -274,4 +280,8 @@
 .member-text {
   color: #fff;
   margin-bottom: 1rem;
+}
+
+#treatments {
+  margin-top: 10rem;
 }
