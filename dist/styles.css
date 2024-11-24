@@ -220,6 +220,15 @@
   }
 }
 
+.careers-container {
+  width: 90%;
+  margin: 150px auto;
+}
+
+#fees-container {
+  margin-top: 150px;
+}
+
 #fees {
   margin-top: 8rem;
   @media (min-width: 1024px) {
@@ -246,9 +255,13 @@
   margin-top: 8rem;
   padding: 1rem;
 
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     display: flex;
-  }
+  } */
+}
+
+.footer {
+  background-color: white;
 }
 
 .img-container {
