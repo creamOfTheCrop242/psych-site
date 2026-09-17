@@ -2,7 +2,7 @@ import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { runInNewContext } from 'node:vm';
 
 await mkdir('dist/sub-pages', { recursive: true });
-for (const file of ['index.html', 'styles.css', 'app.js', 'treatments.js', 'sub-pages']) {
+for (const file of ['index.html', 'styles.css', 'app.js', 'treatments.js', 'sub-pages', 'robots.txt', 'sitemap.xml']) {
   await cp(`src/${file}`, `dist/${file}`, { recursive: true });
 }
 // Render treatment content at build time so it also works without JavaScript.

@@ -3,6 +3,12 @@
   publish = "dist"
 
 [[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/dist/*"
   to = "/:splat"
   status = 301
