@@ -1,0 +1,23 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/dist/*"
+  to = "/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/src/*"
+  to = "/:splat"
+  status = 301
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sub-pages/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

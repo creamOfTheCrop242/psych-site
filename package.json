@@ -1,5 +1,6 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.3.3"
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "python3 scripts/serve.py"
   }
 }
