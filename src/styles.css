@@ -826,3 +826,85 @@ h2 {
 }
 
 .service-page-nav { display:flex; flex-wrap:wrap; align-items:center; gap:24px; margin-top:30px; }
+
+/* Decorative icons use geometry, not platform-dependent emoji or font glyphs. */
+.site-icon {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  vertical-align: -3px;
+  line-height: 1;
+  color: inherit;
+}
+.site-icon::before, .site-icon::after, .site-icon > i {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+}
+.icon-arrow, .icon-down { transform: rotate(-45deg); }
+.icon-down { transform: rotate(90deg); }
+.icon-arrow::before, .icon-down::before {
+  left: 2px;
+  top: 8px;
+  width: 13px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+.icon-arrow::after, .icon-down::after {
+  right: 3px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+.icon-sun, .icon-spark, .icon-wave { width: 32px; height: 32px; }
+.icon-spark > i, .icon-sun > i {
+  top: 0;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 100%;
+  background: currentColor;
+  border-radius: 2px;
+}
+.icon-spark > i:nth-child(2), .icon-sun > i:nth-child(2) { transform: rotate(45deg); }
+.icon-spark > i:nth-child(3), .icon-sun > i:nth-child(3) { transform: rotate(90deg); }
+.icon-spark > i:nth-child(4), .icon-sun > i:nth-child(4) { transform: rotate(135deg); }
+.icon-sun > i { background: linear-gradient(currentColor 0 16%, transparent 16% 84%, currentColor 84%); }
+.icon-sun::after {
+  inset: 25%;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+.icon-wave::before, .icon-wave::after {
+  left: 0;
+  top: 7px;
+  width: 100%;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  transform: rotate(-12deg);
+}
+.icon-wave::after { top: 18px; }
+.service-symbol, .small-sun {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  line-height: 1;
+}
+.note-icon { flex: 0 0 38px; }
+.note-icon .site-icon { width: 20px; height: 20px; }
+.care-strip .icon-spark { width: 16px; height: 16px; }
+.menu-toggle { flex-shrink: 0; -webkit-appearance: none; appearance: none; }
+.menu-toggle > span { flex-shrink: 0; }
+@media (max-width: 580px) {
+  .care-strip .icon-spark { width: 12px; height: 12px; }
+}
