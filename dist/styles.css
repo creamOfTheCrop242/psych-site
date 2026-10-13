@@ -431,6 +431,7 @@ nav>a:hover:after,nav>a[aria-current]:after {
   text-decoration:underline}
 .site-footer {
   display:flex;
+  flex-wrap:wrap;
   justify-content:space-between;
   align-items:center;
   gap:20px;
@@ -902,4 +903,25 @@ h2 {
 .menu-toggle > span { flex-shrink: 0; }
 @media (max-width: 580px) {
   .care-strip .icon-spark { width: 12px; height: 12px; }
+}
+
+.site-footer .site-credit {
+  flex-basis:100%;
+  margin:0;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  text-align:center;
+  font-size:11px;
+  order:4;
+}
+.team-careers {
+  margin-top:40px;
+  padding-top:40px;
+  border-top:1px solid var(--line);
+}
+.team-careers h2 {
+  margin-bottom:20px;
+}
+.team-careers > p:not(.eyebrow) {
+  max-width:620px;
 }
